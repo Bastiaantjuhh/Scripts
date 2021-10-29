@@ -1,0 +1,12 @@
+7zip.install
+adobereader
+keepass.install
+telegram.install
+whatsapp
+greenshot
+notepadplusplus.install
+vlc
+slack
+hashmyfiles
+filezilla
+discord.install

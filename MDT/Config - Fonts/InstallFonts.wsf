@@ -1,0 +1,79 @@
+<job id="Install-Fonts">
+<script language="VBScript" src="..\..\scripts\ZTIUtility.vbs"/>
+<script language="VBScript"> 
+
+'//----------------------------------------------------------------------------
+'//
+'// Global constant and variable declarations
+'//
+'//---------------------------------------------------------------------------- 
+
+Option Explicit 
+
+Dim iRetVal 
+
+'//----------------------------------------------------------------------------
+'// End declarations
+'//---------------------------------------------------------------------------- 
+
+'//----------------------------------------------------------------------------
+'// Main routine
+'//---------------------------------------------------------------------------- 
+
+'On Error Resume Next
+iRetVal = ZTIProcess
+ProcessResults iRetVal
+On Error Goto 0 
+
+'//---------------------------------------------------------------------------
+'//
+'// Function: ZTIProcess()
+'//
+'// Input: None
+'// 
+'// Return: Success - 0
+'// Failure - non-zero
+'//
+'// Purpose: Perform main ZTI processing
+'// 
+'//---------------------------------------------------------------------------
+Function ZTIProcess() 
+	iRetVal = Success 
+	ZTIProcess = iRetval 
+	
+
+	Dim sInstallName
+	sInstallName = "Config - Fonts"
+	
+	'//oLogging.CreateEntry sInstallName & ": Starting installation", LogTypeInfo	
+
+	Dim oFolder, files, file
+	Dim sSourceDir
+	Dim fontsFolder, shell
+
+	set shell = createobject("Shell.Application")
+
+	Const FONTS = &H14&	
+	sSourceDir = oUtility.ScriptDir & "\Fonts"
+	Set fontsFolder = shell.Namespace(FONTS)
+
+	Set oFolder = oFSO.GetFolder(sSourceDir)
+	Set files = oFolder.Files    
+		If files.count = 0 Then
+			'//oLogging.CreateEntry sInstallName & ": No fonts to install", LogTypeInfo
+			ZTIProcess = Success
+			Exit Function
+		End If
+	
+	For Each file In files
+		fontsFolder.CopyHere file.Path
+		'//oLogging.CreateEntry sInstallName & ":Installed font:" & file.name, LogTypeInfo
+	Next
+	
+	'//oLogging.CreateEntry sInstallName & ": Finished fonts installation. Fonts installed:" & files.count, LogTypeInfo	
+
+End Function 
+
+
+</script>
+</job>

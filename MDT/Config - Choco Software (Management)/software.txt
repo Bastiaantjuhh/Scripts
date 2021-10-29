@@ -1,0 +1,7 @@
+keepass.install
+putty.install
+sysinternals
+vnc-viewer
+vmrc
+vmware-powercli-psmodule
+vmware-converter
