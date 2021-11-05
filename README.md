@@ -17,6 +17,7 @@ Repo with scripts I made and sometimes use to make thinks easier. Scripts are fo
 ### Linux
 Script | Type | Description
 ---- | ----- | -----
+Ufw-List | Bash | Script for looping over text file with IP addresses for allowing it in [UFW (Uncomplicated Firewall)](https://help.ubuntu.com/community/UFW)
 Import-PubKey.sh | Bash | Small script I use for importing public SSH keys
 Kuma.sh | Bash | Script for installing [Uptime Kuma](https://github.com/louislam/uptime-kuma) on a Linux server
 
