@@ -32,6 +32,7 @@ Config - RegEdit | Batch | Script for importing different Windows Regristry (Reg
 ### Raspberry Pi
 Script | Type | Description
 ---- | ----- | -----
+Setup-bcm2835.sh | Bash | Installing the bcm2835 lib
 Setup-RPI.sh | Bash | My custom script for setting up a Raspberry Pi
 
 ### Windows
