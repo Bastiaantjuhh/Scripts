@@ -28,14 +28,6 @@ wget -O - https://github.com/Bastiaantjuhh.keys >> ~/.ssh/authorized_keys
 sudo chmod -x /etc/update-motd.d/*
 echo "#!/bin/sh" >> /etc/update-motd.d/01-custom
 echo "/usr/bin/neofetch" >> /etc/update-motd.d/01-custom
-echo 'echo " "' >> /etc/update-motd.d/01-custom
-echo 'echo "WARNING: All connections are monitored and recorded"' >> /etc/update-motd.d/01-custom
-echo 'echo "         Disconnect IMMEDIATELY if you are not an authorized user!"' >> /etc/update-motd.d/01-custom
-echo 'echo " "' >> /etc/update-motd.d/01-custom
-echo 'echo "SERVER IS MAINTAINED BY:"' >> /etc/update-motd.d/01-custom
-echo 'echo "• Bastiaan de Hart"' >> /etc/update-motd.d/01-custom
-echo 'echo "  hosting@bastiaandehart.com"' >> /etc/update-motd.d/01-custom
-echo 'echo " "' >> /etc/update-motd.d/01-custom
 sudo chmod +x /etc/update-motd.d/01-custom
 
 ## PI Locales

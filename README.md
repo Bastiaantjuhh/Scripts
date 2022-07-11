@@ -7,6 +7,7 @@ Repo with scripts I made and sometimes use to make thinks easier. Scripts are fo
   - [Scripts](#scripts-1)
     - [Linux](#linux)
     - [MDT](#mdt)
+    - [Proxmox VE](#proxmox-ve)
     - [Raspberry Pi](#raspberry-pi)
     - [Windows](#windows)
   - [Repository summary](#repository-summary)
@@ -15,6 +16,7 @@ Repo with scripts I made and sometimes use to make thinks easier. Scripts are fo
 ## Scripts
 
 ### Linux
+
 Script | Type | Description
 ---- | ----- | -----
 Ufw-List | Bash | Script for looping over text file with IP addresses for allowing it in [UFW (Uncomplicated Firewall)](https://help.ubuntu.com/community/UFW)
@@ -22,6 +24,7 @@ Import-PubKey.sh | Bash | Small script I use for importing public SSH keys
 Kuma.sh | Bash | Script for installing [Uptime Kuma](https://github.com/louislam/uptime-kuma) on a Linux server
 
 ### MDT
+
 Script | Type | Description
 ---- | ----- | -----
 Config - Choco Software | Batch | Installing software using [Chocolatey](https://chocolatey.org/) 
@@ -29,13 +32,21 @@ Config - Fonts | VBScript | Used for my deployment to install different fonts
 Config - Install Choco | Batch | Installs [Chocolatey](https://chocolatey.org/) itself
 Config - RegEdit | Batch | Script for importing different Windows Regristry (RegEdit) files
 
+### Proxmox VE
+
+Script | Type | Description
+---- | ----- | -----
+First-run.sh | Bash | My customization script for Proxmox VE.
+
 ### Raspberry Pi
+
 Script | Type | Description
 ---- | ----- | -----
 Setup-bcm2835.sh | Bash | Installing the bcm2835 lib
 Setup-RPI.sh | Bash | My custom script for setting up a Raspberry Pi
 
 ### Windows
+
 Script | Type | Description
 ---- | ----- | -----
 Install_KMS_Key.ps1 | PowerShell | Can be used in a [MDT (Microsoft Deployment Toolkit)](https://www.microsoft.com/en-us/download/details.aspx?id=54259) for KMS activating different Windows Versions
@@ -58,7 +69,7 @@ This project is licensed under the [MIT License](https://github.com/Bastiaantjuh
 
 > MIT License
 > 
-> Copyright (c) 2021 Bastiaan de Hart
+> Copyright (c) 2022 Bastiaan de Hart
 > 
 > Permission is hereby granted, free of charge, to any person obtaining
 > a copy of this software and associated documentation files (the
