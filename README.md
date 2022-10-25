@@ -37,6 +37,7 @@ Config - RegEdit | Batch | Script for importing different Windows Regristry (Reg
 Script | Type | Description
 ---- | ----- | -----
 First-run.sh | Bash | My customization script for Proxmox VE.
+Repo.sh | Bash | Setup the non-paid repo list. And remove the Enterprise subscription based repos from sources.list.
 
 ### Raspberry Pi
 

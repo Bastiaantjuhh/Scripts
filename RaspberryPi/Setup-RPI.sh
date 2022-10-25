@@ -34,4 +34,3 @@ sudo chmod +x /etc/update-motd.d/01-custom
 export LANGUAGE=en_US.UTF-8 && export LANG=en_US.UTF-8 && export LC_ALL=en_US.UTF-8 && locale-gen en_US.UTF-8
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 sudo dpkg-reconfigure locales
-
