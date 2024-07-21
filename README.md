@@ -43,6 +43,7 @@ Repo.sh | Bash | Setup the non-paid repo list. And remove the Enterprise subscri
 
 Script | Type | Description
 ---- | ----- | -----
+SDR.sh | Bash | Setup the software and settings for a RTL SDR USB device on a Raspberry Pi
 Setup-bcm2835.sh | Bash | Installing the bcm2835 lib
 Setup-RPI.sh | Bash | My custom script for setting up a Raspberry Pi
 
